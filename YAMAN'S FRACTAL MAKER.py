@@ -13,7 +13,7 @@ c = 3j + 2
 def f(a, c):
     return a**2 + c
 
-# MAIN EQUATION: z_{n+1} = f(sin(z^3) + z/c, c)
+# MAIN EQUATION:
 def iterate(z, c):
     inner = np.exp(z**2) + z / c
     return f(inner, c)
